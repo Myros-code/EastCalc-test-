@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.calc {
+    font-family: Tahoma, Geneva, sans-serif;
+    max-width: 675px;
+    background-color: #E4EEE2;
+    padding: 24px 30px 40px 30px;
+    border-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.calc-geograf__text {
+    font-size: 13px;
+}
+
+.calc__block {}
+
+.calc-date_belt__select {
+    margin: 5px;
+    margin-left: 0;
+}
+
+.calc-date__block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.calc-geograf__block {
+    margin-top: 32px;
+}
+
+.calc-btn__block {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.calc-result__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 27px;
+}
+
+.calc__elem-result__block {
+    width: 157px;
+    height: 124px;
+    background-color: #ffffff;
+    border: 1px solid #91BC8A;
+    margin-top: 11px;
+}
+
+.calc-geograf__long-input {}
+
+.calc-date__item {
+    margin: 2px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.calc-date__item-undef {
+    align-items: flex-end;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.calc-date__input-undef {
+    margin: 0;
+}
+
+.calc-date__item--row {
+    flex-direction: row;
+}
+
+.calc-date__text {
+    margin: 5px 10px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.calc-date_min__text {
+    margin: 5px;
+}
+
+.calc-date__text-undef {
+    margin: 0;
+    margin-left: 5px;
+}
+
+.calc-date__select,
+.calc-date__input {
+    background-color: #F0F6EF;
+    padding: 4px 10px;
+    border: 1px solid #91BC8A;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px rgb(192 192 192 / 70%) inset, 0px 0px 2px rgb(192 192 192 / 70%);
+}
+
+.calc-date__input {
+    width: 60px;
+    margin: 5px;
+
+}
+
+.calc__subBlock-figs {
+    text-align: center;
+}
+
+.calc__symbol-result__block {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    padding: 5px;
+}
+
+.calc__name-result__block {
+    padding: 1px;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.calc-btn__item {
+    font-family: tahoma, arial, helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 15px;
+    border: 1px solid #94cb77;
+    border-radius: 3px;
+    background-color: #c3e75f;
+    margin: 5px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.calc-btn_style-line__block {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.calc-btn_style-line {
+    border: 0;
+    border-bottom: 1px solid #91BC8A;
+}
+
+.calc__stones-result__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc__stones-result__select {
+    width: 409px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #91BC8A;
+    border-radius: 5px;
+
+}
+
+.buy-stone__block {
+    width: 409px;
+    margin: 5px;
+    font-family: tahoma, arial, helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #94cb77;
+    border-radius: 3px;
+    background-color: #c3e75f;
+
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.buy-stone__btn {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.calc-result__subBlock--right {
+    height: 157px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calc-btn_style-line__block--left {
+    margin-left: 0;
+    display: none;
+}
+
+.calc__subBlock-figs-item {
+    font-size: 17px;
+}
+
+
+
+@media (max-width:691px) {
+
+
+    .calc__stones-result__block {
+        margin-top: 15px;
+    }
+
+    .calc-geograf__block {
+        margin-top: 10px;
+    }
+
+    .calc-btn__block {
+        margin-top: 10px;
+    }
+
+    .calc-btn_style-line__block--left {
+        margin-right: 20px;
+        display: block;
+    }
+
+    .calc-result__block {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .calc-date__item--row {
+        margin-top: 20px;
+    }
+
+    .calc-date__block {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:435px) {
+
+    .calc__stones-result__select,
+    .buy-stone__block {
+        width: 220px;
+    }
+
+}
+
+@media (max-width:417px) {
+
+    .calc-date__subblock {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .calc-date_belt__select {
+        margin: 5px;
+        margin-left: 5px;
+    }
+
+}
