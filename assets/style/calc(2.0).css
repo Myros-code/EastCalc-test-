@@ -1,0 +1,460 @@
+@charset "UTF-8";
+.second-calc {
+  /* Это *оболочка калькулятора, задавайте ей стили для изменения размера */
+}
+
+.second-calc .calc,
+.second-calc .calc *,
+.second-calc .calc *::after,
+.second-calc .calc *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.second-calc .calc {
+  font-family: Tahoma, Geneva, sans-serif;
+  max-width: 675px;
+  background-color: #E4EEE2;
+  padding: 24px 30px 30px 30px;
+  border-color: #000000;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.second-calc .calc-geograf__text {
+  font-size: 13px;
+}
+
+.second-calc .calc-date_belt__select {
+  margin: 5px;
+  margin-left: 0;
+}
+
+.second-calc .calc-date__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.second-calc .calc-geograf__block {
+  margin-top: 32px;
+}
+
+.second-calc .calc-btn__block {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.second-calc .calc-result__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.second-calc .calc__elem-result__block {
+  width: 157px;
+  height: 101px;
+  background-color: #ffffff;
+  border: 1px solid #91BC8A;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.second-calc .calc-date__item {
+  margin: 2px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.second-calc .calc-date__item-undef {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.second-calc .calc-date__input-undef {
+  margin: 0;
+}
+
+.second-calc .calc-date__item--row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.second-calc .calc-date__text {
+  margin: 5px 10px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.second-calc .calc-date_min__text {
+  margin: 5px;
+}
+
+.second-calc .calc-date__text-undef {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.second-calc .calc-date__select,
+.second-calc .calc-date__input {
+  background-color: #F0F6EF;
+  padding: 4px 10px;
+  border: 1px solid #91BC8A;
+  border-radius: 3px;
+}
+
+.second-calc .calc-date__input {
+  width: 60px;
+  margin: 5px;
+}
+
+.second-calc .calc__subBlock-figs {
+  text-align: center;
+}
+
+.second-calc .calc__symbol-result__block {
+  width: 100%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 55px;
+  padding: 5px;
+  position: relative;
+}
+
+.second-calc .calc__name-result__block {
+  padding: 1px;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.second-calc .calc__subBlock-figs--gua {
+  margin-top: 5px;
+}
+
+.second-calc .calc__gua-result__block {
+  width: 157px;
+  background-color: #ffffff;
+  border: 1px solid #91BC8A;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 5px;
+  height: 27px;
+}
+
+.second-calc .calc__gua-result__item {
+  font-size: 13px;
+}
+
+.second-calc .calc-btn__item {
+  font-family: tahoma, arial, helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding: 10px 15px;
+  border: 1px solid #94cb77;
+  border-radius: 3px;
+  background-color: #c3e75f;
+  margin: 5px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.second-calc .calc-btn_style-line__block {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.second-calc .calc-btn_style-line {
+  border: 0;
+  border-bottom: 1px solid #91BC8A;
+}
+
+.second-calc .calc__stones-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.second-calc .calc__stones-result__select {
+  width: 409px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #91BC8A;
+  border-radius: 5px;
+}
+
+.second-calc .buy-stone__block {
+  width: 409px;
+  margin: 5px;
+  font-family: tahoma, arial, helvetica, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  border: 1px solid #94cb77;
+  border-radius: 3px;
+  background-color: #c3e75f;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.second-calc .buy-stone__btn {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.second-calc .calc-result__subBlock--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.second-calc .calc-btn_style-line__block--left {
+  margin-left: 0;
+  display: none;
+}
+
+.second-calc .calc__subBlock-figs-item {
+  font-size: 13px;
+}
+
+.second-calc .calc__stones-result__block {
+  width: 411px;
+  height: 157px;
+  background-color: #ffffff;
+  border: 1px solid #91BC8A;
+  margin-top: 8px;
+  border-radius: 10px;
+  margin-right: 6px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.second-calc .calc__stones-result__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0px;
+}
+
+.second-calc .calc__stones-result__list-item {
+  padding-left: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  font-size: 13px;
+}
+
+.second-calc .calc__stones-result__list-item:hover {
+  background-color: #e5e6e7;
+}
+
+.second-calc .stone-name__block {
+  width: 45%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.second-calc .buy-stone {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 26%;
+}
+
+.second-calc .stone-cost__block {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 29%;
+}
+
+.second-calc .stone-name {
+  cursor: default;
+}
+
+.second-calc .stone-cost {
+  cursor: default;
+}
+
+.second-calc .buy-stone__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.second-calc .buy-stone__link:hover {
+  color: royalblue;
+}
+
+@media (max-width: 691px) {
+  .second-calc .calc__stones-result__list-item {
+    pointer-events: none;
+  }
+  .second-calc .buy-stone__link {
+    color: royalblue;
+  }
+  .second-calc .calc__subBlock-figs--stones {
+    margin-top: 5px;
+  }
+  .second-calc .calc__stones-result__block {
+    margin-right: 0;
+  }
+  .second-calc .calc__stones-result {
+    margin-top: 15px;
+  }
+  .second-calc .calc-geograf__block {
+    margin-top: 10px;
+  }
+  .second-calc .calc-btn__block {
+    margin-top: 10px;
+  }
+  .second-calc .calc-btn_style-line__block--left {
+    margin-right: 20px;
+    display: block;
+  }
+  .second-calc .calc-result__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .second-calc .calc-date__item--row {
+    margin-top: 20px;
+  }
+  .second-calc .calc-date__block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 435px) {
+  .second-calc .calc__stones-result__select,
+  .second-calc .buy-stone__block {
+    width: 220px;
+  }
+  .second-calc .calc__stones-result__block {
+    width: 305px;
+  }
+  .second-calc .stone-name__block {
+    width: 40%;
+  }
+  .second-calc .stone-cost__block {
+    width: 38%;
+  }
+}
+
+@media (max-width: 417px) {
+  .second-calc .calc-date__subblock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .second-calc .calc-date_belt__select {
+    margin: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  .second-calc .calc__stones-result__block {
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=calc(2.0).css.map */
